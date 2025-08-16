@@ -15,22 +15,22 @@ const MUSIC_FILE_PATHS = {
 const schedule = {
   classes: [
     {
-      startTime: '20:40',
-      endTime: '20:43',
+      startTime: '9:00',
+      endTime: '9:45',
       name: '1st Period',
       breakDuration: 5,
       musicFile: MUSIC_FILE_PATHS.BREAK_MUSIC_1
     },
     {
-      startTime: '20:48',
-      endTime: '20:50',
+      startTime: '9:50',
+      endTime: '10:35',
       name: '2nd Period',
       breakDuration: 5,
       musicFile: MUSIC_FILE_PATHS.BREAK_MUSIC_2
     },
     {
-      startTime: '20:55',
-      endTime: '20:56',
+      startTime: '10:40',
+      endTime: '11:25',
       name: '3rd Period',
       breakDuration: 10,
       musicFile: MUSIC_FILE_PATHS.BREAK_MUSIC_3
@@ -68,7 +68,7 @@ const schedule = {
     bellDuration: 60000,
     endBellDuration: 10000,
     bellSound: MUSIC_FILE_PATHS.BELL,
-    anthemStartTime: "20:59",
+    anthemStartTime: "9:05",
   }
 };
 
