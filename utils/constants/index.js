@@ -5,7 +5,7 @@ const scheduleFilePath = join(resolve(), 'data/schedule.json');
 
 const MUSIC_FILE_PATHS = {
   BELL: resolve(soundsPath, 'bell.wav'),
-  ANTHEM: resolve(soundsPath, 'anthem_2.wav'),
+  ANTHEM: resolve(soundsPath, 'anthem.wav'),
   BREAK_MUSIC_1: resolve(soundsPath, 'dancin.wav'),
   BREAK_MUSIC_2: resolve(soundsPath, 'break_music.wav'),
   BREAK_MUSIC_3: resolve(soundsPath, 'my_way.wav'),
