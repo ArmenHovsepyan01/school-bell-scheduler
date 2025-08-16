@@ -1,0 +1,33 @@
+{
+  "name": "school-bell-system",
+  "version": "1.0.0",
+  "description": "Automated school bell system with music for breaks",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js",
+    "install-service": "node install-service.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "moment": "^2.30.1",
+    "music-metadata": "^11.7.3",
+    "node-cron": "^3.0.2",
+    "path": "^0.12.7",
+    "play-sound": "^1.1.6"
+  },
+  "keywords": [
+    "school",
+    "bell",
+    "automation",
+    "cron",
+    "scheduler"
+  ],
+  "author": "School Bell System",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8"
+  }
+}

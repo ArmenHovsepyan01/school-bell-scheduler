@@ -1,0 +1,52 @@
+{
+  "classes": [
+    {
+      "startTime": "09:00",
+      "endTime": "09:45",
+      "name": "1st Period",
+      "breakDuration": 5,
+      "musicFile": "C:\\Users\\Armen\\Desktop\\school-bell\\sounds\\break_music.wav"
+    },
+    {
+      "startTime": "09:50",
+      "endTime": "10:35",
+      "name": "2nd Period",
+      "breakDuration": 5,
+      "musicFile": "C:\\Users\\Armen\\Desktop\\school-bell\\sounds\\break_music.wav"
+    },
+    {
+      "startTime": "10:40",
+      "endTime": "11:25",
+      "name": "3rd Period",
+      "breakDuration": 10,
+      "musicFile": "C:\\Users\\Armen\\Desktop\\school-bell\\sounds\\break_music.wav"
+    },
+    {
+      "startTime": "11:35",
+      "endTime": "12:20",
+      "name": "4th Period",
+      "breakDuration": 20,
+      "musicFile": "C:\\Users\\Armen\\Desktop\\school-bell\\sounds\\break_music.wav"
+    },
+    {
+      "startTime": "12:40",
+      "endTime": "13:25",
+      "name": "5th Period",
+      "breakDuration": 5,
+      "musicFile": "C:\\Users\\Armen\\Desktop\\school-bell\\sounds\\break_music.wav"
+    },
+    {
+      "startTime": "13:30",
+      "endTime": "14:15",
+      "name": "6th Period",
+      "breakDuration": 5,
+      "musicFile": "C:\\Users\\Armen\\Desktop\\school-bell\\sounds\\break_music.wav"
+    }
+  ],
+  "settings": {
+    "bellDuration": 60000,
+    "endBellDuration": 10000,
+    "bellSound": "C:\\Users\\Armen\\Desktop\\school-bell\\sounds\\bell.wav",
+    "playMusicDuringBreaks": true
+  }
+}
