@@ -1,10 +1,10 @@
+const os = require('node:os');
 const { spawn } = require('node:child_process');
 
 const scheduleAllBells = require('./scheduleAllBells');
 const getNextBells = require('./getNextBells');
 
 let { cronJobs, schedule } = require('../constants');
-const playAnthemHandler = require('./cronJobProcessors/playAnthemHandler');
 
 const onServerStart = async (port) => {
   console.log(`🔔 School Bell System running on http://localhost:${port}`);
@@ -18,7 +18,14 @@ const onServerStart = async (port) => {
     console.log(`${bell.time} - ${bell.event}`);
   });
 
-  spawn('cmd', ['/c', 'start', `http://localhost:${port}`], { stdio: 'ignore' });
+  const platform = os.platform();
+  const url = `http://localhost:${port}`;
+
+  if (platform === 'linux') {
+    spawn('xdg-open', [url], { stdio: 'ignore' });
+  } else if (platform === 'win32') {
+    spawn('cmd', ['/c', 'start', url], { stdio: 'ignore' });
+  }
 };
 
 module.exports = onServerStart;
