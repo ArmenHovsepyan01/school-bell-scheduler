@@ -14,8 +14,6 @@ const onServerStart = async (port) => {
 
   console.log('\n📅 Next scheduled events:');
 
-  await playAnthemHandler();
-
   getNextBells(schedule).forEach(bell => {
     console.log(`${bell.time} - ${bell.event}`);
   });
