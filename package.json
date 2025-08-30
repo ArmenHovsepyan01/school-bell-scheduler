@@ -15,7 +15,7 @@
     "music-metadata": "^11.7.3",
     "node-cron": "^3.0.2",
     "path": "^0.12.7",
-    "play-sound": "^1.1.6"
+    "sound-play": "^1.1.0"
   },
   "keywords": [
     "school",

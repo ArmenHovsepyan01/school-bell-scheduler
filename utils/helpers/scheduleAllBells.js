@@ -7,7 +7,15 @@ const classBreakHandler = require('./cronJobProcessors/classBreakHandler');
 const breakEndHandler = require('./cronJobProcessors/breakEndHandler');
 const playAnthemHandler = require('./cronJobProcessors/playAnthemHandler');
 
+const { isMonday, isWeekend } = require('./dates');
+
 async function scheduleAllBells(cronJobs, schedule) {
+  if (isWeekend()) {
+    console.log('It\'s weekend, no bells scheduled.');
+
+    return;
+  }
+
   console.log('Scheduling bells, 🔔...');
 
   cronJobs.forEach(job => job.stop());
@@ -33,7 +41,7 @@ async function scheduleAllBells(cronJobs, schedule) {
     }
   });
 
-  if (schedule.settings.anthemStartTime) {
+  if (schedule.settings.anthemStartTime && isMonday()) {
     const [anthemHour, anthemMin] = schedule.settings.anthemStartTime.split(':');
     const anthemJob = cron.schedule(`${anthemMin} ${anthemHour} * * *`, playAnthemHandler);
     cronJobs.push(anthemJob);
